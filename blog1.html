@@ -1,0 +1,151 @@
+<!--This website is built by just using HTML and Inline CSS-->
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog_1</title>
+	<style>
+		ul
+		{
+			list-style-type: none;
+			margin:0;
+			padding:3px;
+			overflow: hidden;
+			background-color: red;
+			position: fixed;
+			width: 100%;
+			top:0;
+
+		}
+		li
+		{
+			display: inline;
+			float: left;
+
+		}
+		
+		li a
+		{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			margin-left: 250px;
+		}
+		li a:hover
+		{
+			background-color: #ccffff;
+			color: black;
+		}
+		li a.active
+		{
+			background-color: #00b38f;
+		}
+		h3
+		{
+			font-style: italic;
+			color: black;
+		}
+		div
+		{
+			margin-top: 40px;
+			margin-left: 30px;
+			margin-right: 30px;
+			
+		}
+		.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+		 @media only screen and (max-width: 1100px)
+        {
+        	body{
+        		background-color: green;
+        	}
+        }
+        @media only screen and (max-width: 800px)
+        {
+        	body{
+        		background-color: red;
+        	}
+        	
+	</style>
+</head>
+<body style="background-color: #ccffff" onload="myfunction()">
+	<script type="text/javascript">
+	function myfunction() {
+  var person = prompt("Please enter your name", "Your Name");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today? All good? Keep learning! Be motivated!";
+  }
+}
+</script>
+</script>
+
+    <ul>
+    	<li><a href="#" class="active">Home</a></li>
+    	<li><a href="about_blog1.html">About</a></li>
+    	<li><a href="">News</a></li>
+    	<li><a href="">Contact</a></li>
+    </ul>
+
+    <br><br><br>
+    <h1 style="font-family:Times New Roman, Times, serif; text-align: center; color: #4d0066"><u><b>HTML-CSS BEGINNER'S TUTORIAL</b></u></h1>
+    <h2 id="demo" style="text-align: center; color: #4da6ff"></h2>
+   <div class="container">
+    <img src="Want_to_learn_to_build_websites__Try_our_free_HTML__-CSS_crash_course.jpg" alt="here is an image" width="100%" class="image">
+    <div class="middle">
+    	<div class="text">
+    		<p>Wanna learn HTML and CSS?</p><br>
+    		<p>Join us today to learn from scratch!</p>
+    	</div>
+    </div>
+</div>
+    <br><br><br> <br><br><br>
+    <img src="1_Wxsd6vzQxe6WPidUNJXgwA.jpeg" alt="here is an image" width="45%" align="right"><br><br>
+    <div style="padding-right: 45%; font-style: italic;">
+    	<p><b>HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications. Let's see what is meant by Hypertext Markup Language, and Web page.</b></p>
+    	<p><b>HyperText simply means "Text within Text." A text has a link within it, is a hypertext. Whenever you click on a link which brings you to a new webpage, you have clicked on a hypertext. HyperText is a way to link two or more web pages (HTML documents) with each other.</b></p>
+    </div>
+    <br><br><br> <br><br><br>
+    <img src="1555488760_-.png" alt="here is an image" width="45%" align="left">
+    	<br><br><br><br><br>
+    	<div style="padding-left: 45%; font-style: italic;">
+    	<p><b>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</b></p>
+    	<p><b>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</b></p>
+    </div>
+    <br><br><br><hr>
+     <marquee text-size="10px" font-color="#ff3333" hspace="40%" width="20%">
+   <b>Developed as a practice project by Raj Maity!</b>
+</body>
+</html>
